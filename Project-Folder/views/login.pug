@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/styles.css")
+  body
+    header
+      h1 Login
+    section
+      form(action='/auth/login', method='POST')
+        label(for='username') Username:
+        input(type='text', name='username', required)
+        br
+        label(for='password') Password:
+        input(type='password', name='password', required)
+        br
+        button(type='submit') Login
+    footer
+      p &copy; 2024 Earthquake Tracker
